@@ -1,0 +1,174 @@
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="js/scrollreveal.js"></script>
+    <LINK rel=StyleSheet href="css/main.css" type="text/css" media=screen>
+    <title>love you </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    
+</head>
+
+<body>
+   
+    <style>
+
+        *, *::after,*::before{
+            margin: 0;  
+            padding: 0;
+            -webkit-box-sezing: border-box;
+            -moz-box-sezing: border-box;
+            box-sezing: border-box;
+        }
+        #barracarga{
+            background-color:rgb(255, 255, 255);
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            -webkit-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            transition: all 1s ease;
+            z-index:1000;
+        }
+    
+        #cargando{
+            border: 15px solid #ccc;
+            border-top-color: rgb(151, 150, 150);
+            border-radius: 100%;
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            top:0px;
+            bottom:0px;
+            left:0px;
+            right: 0px;
+            margin:auto;
+            -webkit-animation: rotate  2s linear infinite;
+            animation: rotate  2s linear infinite;
+        }
+        @-webkit-keyframes rotate  {
+            from {-webkit-transform: rotate(0deg);}
+            to {-webkit-transform: rotate(360deg);}
+        }
+    
+    </style>
+    
+    <div id="barracarga"> 
+        
+        <div id="cargando"></div>
+    
+    </div>
+    
+    <script>
+       window.onload = function(){
+          
+            var contenedor = document.getElementById('barracarga');
+            
+            contenedor.style.visibility = 'hidden';
+            
+            contenedor.style.opacity = '0'
+       }
+    </script>
+    
+
+    <div id="container">
+      
+        
+        <div class="saludo">
+            <center>
+                <audio id="demo" src="canon.mp3"></audio>
+                <script>
+                    document.getElementById('demo').play();
+                    document.getElementById('demo').pause()
+                </script>
+                <div>
+                </div>
+                <h1 class="entrada animacion-1"> FELIZ ANIVERSARIO MIAMORCITABELLAYHERMOSA </h1>
+                <h2 class="inicio-h1 animacion-2">Hoy es un dia muy especial, tanto amor que expresar</h2>
+                <h2 class="inicio-h1 animacion-3">Que en la siguiente carta te hare llegar</h2>
+                <h2 class="inicio-h1 animacion-4">¿estas lista?</h2>     
+                <p>
+                    <span class="animacion-5">3..</span>
+                    <span class="animacion-6">2..</span>
+                    <span class="animacion-7">1..</span>
+                </p>
+                <a onclick="cambiar()" id="play"><img src="img/corazon.png" class="animacion-8 img " ></a> 
+
+                </script>              
+            </center>
+        </div>
+    </div>
+    <div id="container2">
+        <div class="saludo2">
+
+            <center>
+                <h1 class="title">5 Añitos<br>  <br></h1>
+            </center>
+            <h2  class=""> <span class="typed "></span> </h2>
+        </div>
+       
+    </div>
+    <!-- <div id="container3">
+        <div class="saludo2">
+
+            <center>
+                <h1 class="title" style="font-size: 3rem;"> Con amor del mas sincero: <br>  <br></h1>
+            </center>
+        </div>
+       
+    </div> -->
+    
+    <script>
+        cont1= document.getElementById('container');
+        cont2= document.getElementById('container2');
+        cont3= document.getElementById('container3');
+        cont2.style.display= 'none';
+        cont3.style.display= 'none';
+        
+        function cambiar(){
+            document.getElementById('demo').play();
+            cont1.style.display= 'none';
+            cont2.style.display= 'block';
+            frase1='Todo comenzó el día 15 de octubre del 2019, aun recuerdo ese dia esa tarde en la que de atrevido me decidi por escribirte, penoso, asi era pero con ganas de conocerte, ganas de hacerte sonreir aun mas despues de que rieras conmigo la primera vez, ganas que aun no se van, y que cada dia han sido mas y maaaasss <br>';
+
+            fraseFinal= 'Por siempre y para siempre 🐣❤️ <br><br><br><br>';
+
+            const typed = new Typed('.typed', {
+                strings: [
+                    frase1,
+                    fraseFinal
+                ],
+                typeSpeed: 60,
+                startDelay:2000,
+                cursorChar: ' ',
+            });
+        }
+        function creditos(){
+            cont2.style.display= 'none';
+            cont3.style.display= 'block';
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script>
+
+    </script>
+
+
+    <!-- <script src="js/animaciones-2.js"></script> -->
+    <script src="js/main.js"> </script>
+    <script src="js/animaciones-1.js"> </script>
+    
+    <!-- <footer>
+       
+        <div>
+            Iconos diseñados por:
+            <a href="https://www.freepik.com" title="Freepik">Freepik</a> 
+            from:
+            <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a>
+        </div>
+    </footer> -->
+</body>
+</html>
+<!-- 
+
+
